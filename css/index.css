@@ -127,3 +127,38 @@ label{
     border-radius: 50% 50%;
 
 }
+
+.konten{
+    padding-left: 100px;
+}
+
+.end{
+    text-align: center;
+    border-top: 1px solid gray;
+    padding: 1em 2em;
+    border-bottom: 1px solid gray;
+}
+button.btn-call{
+    margin-top: 5px;
+    padding: 1em 3em 1em 3em;
+    border-radius: 5%;
+    background: cyan;
+    cursor: pointer;
+}
+
+.mock{
+    font-size:20px;
+    text-align: center;
+
+}
+.bottom{
+    text-align: center;
+    padding-top: 2em;
+}
+
+.footer{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}

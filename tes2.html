@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form dengan Validasi Email</title>
+	<script>
+		function validateForm() {
+			var email = document.forms["myForm"]["email"].value;
+			var atSymbol = email.indexOf("@");
+			var dot = email.lastIndexOf(".");
+			if (atSymbol < 1 || dot < atSymbol+2 || dot+2 >= email.length) {
+				alert("Masukkan alamat email yang valid!");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Form dengan Validasi Email</h1>
+	<form name="myForm" onsubmit="return validateForm()" method="post">
+		<label for="name">Nama:</label>
+		<input type="text" id="name" name="name" required>
+		<br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
